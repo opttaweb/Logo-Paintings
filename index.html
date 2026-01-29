@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optta | Logo Store</title>
+
+    <!-- Favicon (browser tab logo) -->
+    <link rel="icon" type="image/png" href="Images/Gemini_Generated_Image_k6cry3k6cry3k6cr.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: black;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header img {
+            height: 45px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #000000;
+        }
+
+        /* NAV BUTTONS */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            margin-left: 10px;
+            text-decoration: none;
+            background-color: #7209b7;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #560bad;
+        }
+
+        section {
+            padding: 50px 30px;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        /* HOME */
+        .home {
+            text-align: center;
+        }
+
+        .home img {
+            max-width: 920px;
+            margin-top: 20px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #b3b3c5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .price {
+            color: #00ff40;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #7209b7;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #560bad;
+        }
+
+        /* FORM */
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        footer {
+            color: white;
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER + NAV -->
+<header>
+    <img src="Images/Gemini_Generated_Image_k6cry3k6cry3k6cr.png" alt="Optta Logo">
+    <h1>OPTTA</h1>
+
+    <nav>
+        <a href="#logo-gallery">Logo Gallery</a>
+        <a href="#paint-gallery">Paint Gallery</a>
+        <a href="#customize">Customization</a>
+        <a href="#payment">Payment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home">
+    <h1>Welcome to Optta</h1>
+    <h3>Logos & designs with customization options</h3>
+    <img src="Images/OG logo.png" alt="Featured Logo">
+</section>
+
+<!-- LOGO GALLERY -->
+<section id="logo-gallery">
+    <h2>Logo Gallery</h2>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="Images/Gemini_Generated_Image_k6cry3k6cry3k6cr.png" alt="Logo 1">
+            <h3>Logo ID: OPT-001</h3>
+            <p>Neon graffiti style logo</p>
+            <div class="price">₹1</div>
+            <button onclick="location.href='#customize'">Request Modification</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/Gemini_Generated_Image_k6cry3k6cry3k6cr23.png" alt="Logo 2">
+            <h3>Logo ID: OPT-002</h3>
+            <p> Promo Peak logo</p>
+            <div class="price">₹1</div>
+            <button onclick="location.href='#customize'">Request Modification</button>
+        </div>
+    </div>
+</section>
+
+<!-- PAINT GALLERY -->
+<section id="paint-gallery">
+    <h2>Paint Gallery</h2>
+
+     <div class="gallery">
+        <div class="card">
+            <img src="Images/Gemini_Generated_Image_5e35ja5e35ja5e35.png" alt="Logo 1">
+            <h3>Logo ID: OPT-001</h3>
+            <p>Rainbow Splash</p>
+            <div class="price">₹1</div>
+            <button onclick="location.href='#customize'">Request Modification</button>
+        </div>
+
+        <div class="card">
+            <img src="Images/OG logo.png" alt="Logo 2">
+            <h3>Logo ID: OPT-002</h3>
+            <p>Modern brand logo</p>
+            <div class="price">₹1</div>
+            <button onclick="location.href='#customize'">Request Modification</button>
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOMIZATION FORM -->
+<section id="customize">
+    <h2>Customization Request Form</h2>
+
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="text" name="Logo ID" placeholder="Logo ID / Name" required>
+        <textarea name="Message" rows="5" placeholder="Describe your changes" required></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+</section>
+
+<!-- PAYMENT -->
+<section id="payment">
+    <h2>Payment Section</h2>
+    <p>Payment details will be shared after confirmation.</p>
+    <p>(Editable by owner – future gateway support)</p>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact">
+    <p>📞 Phone: +974 7096 3557</p>
+    <p>📧 Email: opttaweb@gmail.com</p>
+    <p>© 2026 Optta</p>
+</footer>
+
+</body>
+</html>
